@@ -13,10 +13,10 @@ public class Main {
                 new FileInputStream("tehdas.properties"));
         } catch (IOException e) {e.printStackTrace();}
         try{
-                c = Class.forName(properties.getProperty("tehdas"));
-                vt = (Vaatetehdas)c.getDeclaredConstructor().newInstance();
+            c = Class.forName(properties.getProperty("tehdas"));
+            vt = (Vaatetehdas)c.getDeclaredConstructor().newInstance();
         } catch (Exception e){e.printStackTrace();}
-        
+
         Ihminen jasper = new Ihminen(vt, "Jasper");
 
         jasper.pueFarmarit();
