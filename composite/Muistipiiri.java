@@ -1,15 +1,18 @@
 public class Muistipiiri implements ILaiteosa{
 
+    private double hinta;
+
+    public Muistipiiri(double h){
+        hinta = h;
+    }
     @Override
     public void setHinta(double h) {
-        // TODO Auto-generated method stub
-        
+        hinta = h;
     }
 
     @Override
     public double getHinta() {
-        // TODO Auto-generated method stub
-        return 0;
+        return hinta;
     }
-    
+
 }
