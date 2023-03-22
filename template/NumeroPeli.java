@@ -7,15 +7,15 @@ public class NumeroPeli extends Game {
 
     HashMap pisteet = new HashMap<Integer, Integer>();
     boolean loppu = false;
+    Random rand = new Random();
     @Override
     void initializeGame() {
         
-        System.out.println("Tervetuloa pelamaan satunnaislukupeliä!");
+        System.out.println("Tervetuloa pelamaan satunnaislukupeliä! Voittaja on se, joka ensin saa satunnaislukuarpojalta 50 pistettä!");
     }
 
     @Override
     void makePlay(int player) {
-        Random rand = new Random();
         int arvottuLuku = (rand.nextInt(10-1+1) + 1);
 
         System.out.println("Pelaajalle " + player + " arvottiin luku " + arvottuLuku);
