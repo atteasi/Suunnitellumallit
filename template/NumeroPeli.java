@@ -7,6 +7,7 @@ public class NumeroPeli extends Game {
 
     HashMap pisteet = new HashMap<Integer, Integer>();
     boolean loppu = false;
+    int voittaja;
     Random rand = new Random();
     @Override
     void initializeGame() {
@@ -18,7 +19,7 @@ public class NumeroPeli extends Game {
     void makePlay(int player) {
         int arvottuLuku = (rand.nextInt(10-1+1) + 1);
 
-        System.out.println("Pelaajalle " + player + " arvottiin luku " + arvottuLuku);
+        System.out.println("Pelaajalle " + (player +1) + " arvottiin luku " + arvottuLuku);
         if(pisteet.get(player) == null){
             pisteet.put(player, arvottuLuku);
         } else {
@@ -28,6 +29,7 @@ public class NumeroPeli extends Game {
         int pisteita = (int) pisteet.get(player);
         if(pisteita > 50){
             loppu = true;
+            voittaja = player;
         }
     }
 
@@ -40,16 +42,8 @@ public class NumeroPeli extends Game {
 
     @Override
     void printWinner() {
-        int voittaja = 0;
-        for(int i = 0; i < pisteet.size(); i++){
-            if(i != 0){
-                if((int) pisteet.get(i) > (int) pisteet.get(i - 1)){
-                    voittaja = i;
-                }
-            } else if (i == 0){
-            }
-        }
-        System.out.println("Pelin voitti pelaaja " + voittaja);
+         
+        System.out.println("Pelin voitti pelaaja " + (voittaja + 1) );
     }
     
 }
