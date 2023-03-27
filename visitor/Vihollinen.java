@@ -1,15 +1,15 @@
 package visitor;
 
-public class Hahmo {
-    private HahmoState state;
+public class Vihollinen {
+    private VihollinenState state;
     private int exp;
 
-    public Hahmo(){
-        state = Ihminen.getInstance();
+    public Vihollinen(){
+        state = Peikko.getInstance();
     }
 
-    public void changeState(HahmoState hs) {
-        state = hs;
+    public void changeState(VihollinenState vs) {
+        state = vs;
     }
 
     public void hyokkaa() {
@@ -19,7 +19,6 @@ public class Hahmo {
     public void puhu() {
         state.puhu(this);
     }
-
 
     public int getExp() {
         return exp;
@@ -32,7 +31,7 @@ public class Hahmo {
     public void accept(Visitor visitor){
         state.accept(visitor);
     }
-
+    
     public int hyokkaysTodennakoisyys(){
         return state.hyokkaysTodennakoisyys(this);
     }
