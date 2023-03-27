@@ -24,6 +24,6 @@ class ProxyImage implements Image {
 
     @Override
     public void showData() {
-        image.showData();
+        System.out.println("Filename: " + filename);
     }
 }
