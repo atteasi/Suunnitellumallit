@@ -23,10 +23,11 @@ class ProxyExample {
         }
 
         boolean jatkuu = true;
+        int valinta;
 
         while(jatkuu){
             System.out.println("Mitä kuvaa haluaisit katsoa? (lopeta syötteellä 0)");
-            int valinta = sc.nextInt();
+            valinta = sc.nextInt();
             if(valinta > kuvat.length || valinta < 0){
                 System.out.println("Virheellinen valinta!");
             } 
