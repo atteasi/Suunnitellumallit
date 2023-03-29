@@ -14,6 +14,7 @@ public class Main {
             vihuHyokkays = vihu.hyokkaysTodennakoisyys();
             hahmoHyokkays = hahmo.hyokkaysTodennakoisyys();
 
+            System.out.println(vihuHyokkays + " " + hahmoHyokkays);
             if(vihuHyokkays > hahmoHyokkays){
                 vihu.hyokkaa();
                 vihu.puhu();
