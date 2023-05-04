@@ -1,4 +1,6 @@
-public class Naytonohjain implements ILaiteosa{
+package composite;
+
+public class Naytonohjain implements ILaiteosa {
 
     private double hinta;
 

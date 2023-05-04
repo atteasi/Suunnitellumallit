@@ -1,4 +1,6 @@
-public class Emolevy implements ILaiteosa{
+package composite;
+
+public class Emolevy implements ILaiteosa {
 
 
     private double hinta;

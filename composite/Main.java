@@ -1,5 +1,6 @@
-import java.util.ArrayList;
+package composite;
 
+import java.util.ArrayList;
 public class Main {
     public static void main(String args[]){
         double tietokoneenHinta = 0.00;

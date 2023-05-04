@@ -1,4 +1,6 @@
-public class Verkkokortti implements ILaiteosa{
+package composite;
+
+public class Verkkokortti implements ILaiteosa {
 
     private double hinta;
 

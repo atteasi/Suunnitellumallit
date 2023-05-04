@@ -1,3 +1,5 @@
+package composite;
+
 public interface ILaiteosa {
     
     public abstract void setHinta(double h);

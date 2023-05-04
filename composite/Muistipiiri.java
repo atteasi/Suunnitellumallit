@@ -1,4 +1,6 @@
-public class Muistipiiri implements ILaiteosa{
+package composite;
+
+public class Muistipiiri implements ILaiteosa {
 
     private double hinta;
 

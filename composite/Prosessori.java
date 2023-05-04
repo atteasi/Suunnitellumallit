@@ -1,4 +1,6 @@
-public class Prosessori implements ILaiteosa{
+package composite;
+
+public class Prosessori implements ILaiteosa {
 
     private double hinta;
 

@@ -1,4 +1,6 @@
-public class Kotelo implements ILaiteosa{
+package composite;
+
+public class Kotelo implements ILaiteosa {
     
     private double hinta;
 
